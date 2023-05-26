@@ -1,0 +1,23 @@
+body{
+    background-color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#name-underline{
+    text-decoration: #71ee0ad8 underline;
+}
+
+.hr{
+    width: 80%;
+    border: 0;
+    height: 2px;
+    background: #565555fa;
+}
