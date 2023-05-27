@@ -4,24 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Dunkan Gibson</title>
   </head>
   <body>
     <nav id="navbar">
       <ul id="nav-containter">
-        <li>dunkangibson</li>
-        <li>
+        <li class="name">dunkangibson</li>
+        <li class="nav-icons">
           <a href="https://github.com/DunkanGibson/DunkanGibson">
             <img src="/images/github.svg" alt="github" class="icon" />
           </a>
         </li>
-        <li>
+        <li class="nav-icons">
           <a href="https://linkedin.com/dunkangibson">
             <img src="/images/linkedin.svg" alt="linkedin" class="icon" />
           </a>
         </li>
-        <li>
+        <li class="nav-icons">
           <a href="https://twitter.com">
             <img src="/images/twitter.svg" alt="twitter" class="icon" />
           </a>
@@ -29,15 +32,25 @@
       </ul>
     </nav>
     <section id="header">
-      <h1 class="intro">
-        Hello, Im <u id="name-underline">Dunkan Gibson,</u> a Full Stack
-        Software Engineer
-      </h1>
-      <h4 class="detail">
-        Based in the US, I'm an enthusiast of everything Technology. More
-        specificaly a builder of software both front and backend.
-      </h4>
-      <button class="btn">Contact Me</button>
+        <div id="header-container">
+            <div id="intro-text">
+                <h1 class="intro">
+                    Hi, Im <u id="underline">Dunkan Gibson</u> a Full Stack
+                    Software Engineer.
+                </h1>
+                <h4 class="detail">
+                    Based in the US, I'm an enthusiast of everything Technology. More
+                    specificaly a builder of software both front and backend.
+                </h4>
+                <button class="button">CONTACT ME</button>
+            </div>
+            <picture id="me">
+                <source media="(max-width: 799px)" srcset="/images/personLR.jpg">
+                <source media="(min-width: 800px)" srcset="/images/personLR.jpg">
+                <img src="/images/personLR.jpg">
+                <span class="overlay">Test</span>
+              </picture>
+        </div>
     </section>
     <hr class="hr" />
     <section id="experience">
