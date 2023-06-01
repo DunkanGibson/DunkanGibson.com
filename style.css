@@ -141,10 +141,10 @@ button{
 }
 
 #exp-container{
+    --auto-grid-min-size: 16rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr [col-start]);
-    grid-template-rows: repeat(2, 50% [row-start]);
-    column-gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-gap: 5rem;
     padding: 0 5% 0 5%;
     row-gap: 3rem;
     justify-items: center;
@@ -188,10 +188,11 @@ button{
 }
 
 #projects-container{
-    display: grid;
     margin: 2rem 0 8rem 0;
-    grid-template-columns: repeat(2, 1fr [col-start]);
-    grid-template-rows: repeat(2, 1fr [row-start]);
+    --auto-grid-min-size: 16rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-gap: 5rem;
     column-gap: 2rem;
     row-gap: 3rem;
     justify-items: center;
@@ -221,8 +222,8 @@ button{
   }
 
 #contact{
-background-color: #2d2a2a96;
 height: 50rem;
+background-color: #2d2a2a96;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
@@ -294,7 +295,17 @@ justify-content: space-between;
 }
 
 footer{
-    /* align-self: flex-end; */
     top: 0;
     position: relative;
 }
+
+@media screen and (max-width: 768px) {
+    .image{
+        display: none;
+    }
+    #contact-container{
+        --auto-grid-min-size: 16rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    }
+  }
