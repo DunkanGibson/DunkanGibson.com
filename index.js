@@ -45,17 +45,17 @@ const changeWord = () => {
   const changeingWord = document.querySelector("#hello");
   if (isInViewport(changeingWord)) {
     changeingWord.innerHTML =
-      hello_in_languages[Math.floor(Math.random() * hello_in_languages.length)];
+      hello_in_languages[Math.round(Math.random() * hello_in_languages.length)];
   }
 };
 
-setInterval(() => changeWord(), 2500);
+setInterval(() => changeWord(), 4000);
 
 let contactName = document.querySelector(".contact-name")
 let contactEmail = document.querySelector(".contact-email")
 let contactMessage = document.querySelector(".contact-message")
 
-//need to check validation of inputs
+//TODO need to check validation of inputs
 
 
 document.querySelector(".submit-message").addEventListener("click", () => {
