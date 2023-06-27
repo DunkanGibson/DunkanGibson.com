@@ -4,14 +4,12 @@ const hello_in_languages = [
   "Hola", // Spanish
   "Ciao", // Italian
   "Guten Tag", // German
-  "Konnichiwa", // Japanese
   "Namaste", // Hindi
   "Merhaba", // Turkish
   "Szia", // Hungarian
   "Hallo", // Dutch
   "Hej", // Swedish
   "Ahoj", // Czech
-  "Annyeonghaseyo", // Korean
   "Salut", // Romanian
   "Sawatdi", // Thai
   "Marhaba", // Arabic
@@ -21,13 +19,11 @@ const hello_in_languages = [
   "Nǐ hǎo", // Mandarin Chinese
   "Salam", // Persian
   "Sveiki", // Latvian
-  "Tervetuloa", // Finnish
   "Dia duit", // Irish
   "Olá", // Portuguese
   "Halo", // Indonesian
   "Privet", // Russian
   "Sannu", // Hausa
-  "Selamat pagi", // Malay
 ];
 
 function isInViewport(element) {
