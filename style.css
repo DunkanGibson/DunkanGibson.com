@@ -1,10 +1,10 @@
-html body {
+body {
   background-color: #100f0fee;
   color: #ffffff;
   text-align: left;
   margin: 0;
   padding: 0;
-  max-width: 100%;
+  width: 100%;
   overflow-x: hidden;
 }
 
@@ -25,9 +25,8 @@ a {
   margin-top: 2rem;
 }
 
-#nav-containter {
+#nav-container {
   font-family: "Fjalla One", sans-serif;
-  /* font-family: 'Libre Baskerville', serif; */
   display: flex;
   list-style: none;
   padding: 0 5% 0 5%;
@@ -60,7 +59,7 @@ a {
   font-size: 6rem;
   letter-spacing: 2px;
   margin: 0;
-  width: 130%;
+  width: 100%;
   font-weight: 400;
 }
 
@@ -72,7 +71,7 @@ a {
 .detail {
   font-family: "Libre Baskerville", serif;
   margin: 0;
-  font-size: 1rem;
+  font-size: 1em;
   line-height: 2rem;
   width: 60%;
   padding: 3rem 0 3rem 0;
@@ -141,17 +140,18 @@ button {
 }
 
 #exp-container {
-  --auto-grid-min-size: 16rem;
+  --auto-grid-min-size: 26rem;
   display: grid;
   grid-template-columns: repeat(
-    auto-fill,
+    auto-fit,
     minmax(var(--auto-grid-min-size), 1fr)
   );
   grid-gap: 5rem;
   padding: 0 5% 0 5%;
   row-gap: 3rem;
-  justify-items: center;
-  align-items: center;
+  justify-items: space-between;
+  align-items: space-between;
+
 }
 
 .exp-item {
@@ -160,6 +160,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-right: 15%;
   font-size: 4rem;
 }
 
@@ -191,10 +192,10 @@ button {
 
 #projects-container {
   margin: 2rem 0 8rem 0;
-  --auto-grid-min-size: 16rem;
+  --auto-grid-min-size: 18rem;
   display: grid;
   grid-template-columns: repeat(
-    auto-fill,
+    auto-fit,
     minmax(var(--auto-grid-min-size), 1fr)
   );
   grid-gap: 5rem;
@@ -235,21 +236,12 @@ button {
 }
 
 #contact-container {
-  display: grid;
-  margin-top: 7rem;
-  height: 150rem;
+  display: flex;
   padding: 0 5% 0 5%;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 22% 22% auto 22%;
-  grid-template-areas:
-    "headerTL headerTR"
-    ". firstMR"
-    ". second"
-    ". third";
+  flex-grow: 1;
 }
 
 #contact-input {
-  grid-area: headerTL;
   place-self: center;
   display: flex;
   flex-direction: column;
@@ -281,31 +273,30 @@ button {
   border-bottom: 1px solid #d2d2d2;
 }
 
-.contact-name {
-  grid-area: headerTR;
-}
-
-.contact-email {
-  grid-area: firstMR;
-}
-
-.contact-message {
-  grid-area: second;
+#contact-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 1;
 }
 
 #contact-container button {
-  grid-area: third;
   background: none;
   border: none;
 }
 
-footer {
-  top: 0;
-  position: relative;
+#footer {
+  background-color: #2d2a2a96;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+footer ul{
+  margin: 0;
 }
 
 @media screen and (max-width: 768px) {
-  .image {
+  .image, .circle, .abstract-icon, .abstract-icon-2 {
     display: none;
   }
   #contact-container {
