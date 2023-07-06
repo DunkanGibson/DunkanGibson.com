@@ -6,7 +6,8 @@ This is the repository for my personal portfolio website, showcasing my skills, 
 
 You can visit the live website [here](https://dunkangibson.com).
 
-![dunkangibsondotcom](https://github.com/DunkanGibson/DunkanGibson.com/assets/52463084/d5e01e37-4e59-4e8f-acf9-d41d0102f4b7)
+![dunkangibsoncom](https://github.com/DunkanGibson/DunkanGibson.com/assets/52463084/48a5e823-5b0d-4397-b14b-7bdefdab6fe3)
+
 
 ## Features
 
